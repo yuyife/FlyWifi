@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">FlyWiFi</string>
+
+
+    <string name="action_settings">settings</string>
+
+    <string name="wifi_text_open_hint">要查看可用网络，请勾选WIFI连接</string>
+    <string name="wifi_text_close_hint">正在关闭WIFI...</string>
+    <string name="wifi_text_search_hint">正在搜索WIFI...</string>
+
+    <string name="wifi_isClose_state_toast">请勾选网络连接再点击刷新</string>
+
+    <string name="input_connect_text_ess_hint">正在连接...</string>
+    <string name="input_connect_text_hint_pwd">正在进行身份验证...</string>
+    <string name="input_connect_text_hint_ip">正在获取ip地址...</string>
+    <string name="input_connect_text_hint_ping">正在ping网络...</string>
+    <string name="input_connect_text_hint_ok">连接成功！</string>
+    <string name="input_connect_text_hint_no">网络未ping通</string>
+
+    <string name="input_connect_text_hint_err">身份验证出现错误</string>
+    <string name="input_connect_text_hint_min_8">密码应大于8位</string>
+    <string name="input_connect_text_hint_pwd_is_none">请先输入WIFI密码进行身份验证</string>
+    <string name="input_connect_ping">网络已经ping通</string>
+
+    <string name="current_connect_text_hint">已连接到此网络</string>
+    <string name="current_connect_no_pwd_text_hint">免密码连接</string>
+    <string name="current_connect_ess_text_hint">曾连接过此网络</string>
+    <string name="wifi_cancel_save_tips_ess">取消保存后将不再记住此开放网络</string>
+    <string name="wifi_cancel_save_tips">取消保存后再次连接时可能需要重新输入密码</string>
+    <string name="wifi_cancel_save_tips_again">确定取消请再次点击</string>
+    <string name="wifi_cancel_save_is_connect_text">断开连接</string>
+    <string name="wifi_cancel_save_is_not_connect_text">取消保存</string>
+
+    <!--保存wifi休眠状态也不断开连接-->
+    <string name="wifi_sleep_policy_default">wifi_sleep_policy_default</string>
+
+    <string name="wifi_adapter_connect_text">已连接</string>
+    <string name="wifi_adapter_connect_item_root_tag_value_yes">current_connect_yes</string>
+    <string name="wifi_adapter_connect_item_root_tag_value_no">current_connect_no</string>
+    <string name="wifi_adapter_connect_item_root_tag_is_ess">ess</string>
+    <string name="wifi_adapter_connect_item_root_tag_is_wpa">wpa</string>
+    <string name="wifi_adapter_connect_item_root_tag_is_success_yes">success_yes</string>
+    <string name="wifi_adapter_connect_item_root_tag_is_success_no">success_no</string>
+
+    <string name="wifi_ping_address">www.baidu.com</string>
+
+    <string name="wifi_ssid_is_none">所连接的WIFI名称为空</string>
+    <string name="wifi_is_open">开放网络</string>
+    <string name="wifi_is_open_pwd">open_wifi_pwd</string>
+
+    <!--设计的默认初始值-->
+    <string name="home_connect_wifi_init_value">这是用来标记当前正在连接的SSID的缺省值</string>
+
+</resources>
