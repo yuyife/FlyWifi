@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kuang_connect"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/home_left_and_right_padding"
+    android:paddingRight="@dimen/home_left_and_right_padding"
+    android:weightSum="320">
+    
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="124"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_and_margin_width"
+        android:paddingTop="@dimen/padding_and_margin_width">
+
+
+        <TextView
+            android:id="@+id/already_wifi_name"
+            style="@style/text_tip_style"
+            android:layout_width="match_parent"
+            android:text="wifi name" />
+
+        <TextView
+            style="@style/text_tip_style"
+            android:layout_width="match_parent"
+            android:text="信号强度" />
+
+        <TextView
+            android:id="@+id/already_wifi_signal"
+            style="@style/text_tip_style"
+            android:layout_width="match_parent"
+            android:text="强" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_tip_style"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/padding_and_margin_width"
+                android:text="安全性" />
+
+            <TextView
+                android:id="@+id/already_wifi_safety"
+                style="@style/text_tip_style"
+                android:layout_width="match_parent"
+                android:text="WPA/PSK" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="196"
+        android:gravity="start|center"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/already_cancel_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="取消保存" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/already_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="取消" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/already_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="连接" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

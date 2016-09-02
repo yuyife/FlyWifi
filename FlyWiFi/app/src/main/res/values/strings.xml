@@ -7,8 +7,8 @@
     <string name="wifi_text_open_hint">要查看可用网络，请勾选WIFI连接</string>
     <string name="wifi_text_close_hint">正在关闭WIFI...</string>
     <string name="wifi_text_search_hint">正在搜索WIFI...</string>
+    <string name="wifi_text_error_hint">未搜索到WIFI热点，请检查网络</string>
 
-    <string name="wifi_isClose_state_toast">请勾选网络连接再点击刷新</string>
 
     <string name="input_connect_text_ess_hint">正在连接...</string>
     <string name="input_connect_text_hint_pwd">正在进行身份验证...</string>

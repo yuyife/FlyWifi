@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifi_item_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:clickable="true"
+    android:gravity="center|start"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_height_item"
+        android:layout_marginLeft="@dimen/padding_and_margin_width"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wifi_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|bottom|center"
+            android:text="SMTPDA"
+            android:textColor="@color/color_text"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/wifi_item_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top|center"
+            android:text="已连接"
+            android:textColor="@color/color_text"
+            android:textSize="12px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/wifi_item_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/padding_and_margin_width"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_wifi_signal_2" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

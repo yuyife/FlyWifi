@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kuang_pwd"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/home_left_and_right_padding"
+    android:paddingRight="@dimen/home_left_and_right_padding"
+    android:weightSum="320">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="196"
+        android:gravity="top|center"
+        android:orientation="vertical"
+
+        android:weightSum="196">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_and_margin_width"
+            android:paddingTop="@dimen/padding_and_margin_width">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/input_wifi_name"
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="net_core_737" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="信号强度" />
+
+                <TextView
+                    android:id="@+id/input_signal"
+                    style="@style/text_tip_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="14px"
+                    android:text="较强" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="安全性" />
+
+                <TextView
+                    android:id="@+id/input_safety"
+                    style="@style/text_tip_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="14px"
+                    android:text="WPA/PWA2 PSK" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="96"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/input_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wpa_input_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/input_pwd_tip"
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+                    android:visibility="gone"
+                    android:text="密码" />
+
+                <EditText
+                    android:id="@+id/input_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+                    android:layout_marginRight="@dimen/padding_and_margin_width"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:hint="密码"
+                    android:textSize="20px"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#fff" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/input_pwd_checkbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wpa_input_height"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="start|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/input_pwd_checkbox_txt"
+                    style="@style/TextStyle"
+                    android:layout_width="628px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+                    android:text="显示密码" />
+
+                <CheckBox
+                    android:id="@+id/input_pwd_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="124"
+        android:gravity="start|center"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/input_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="取消" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/input_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="连接" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,92 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/home_left_and_right_padding"
+    android:paddingRight="@dimen/home_left_and_right_padding">
 
     <com.zhy.autolayout.AutoLinearLayout
         android:id="@+id/wifi_control_layout"
-        android:layout_width="684px"
-        android:layout_height="100px"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <!-- beforeDescendants：viewgroup会优先其子类控件而获取到焦点 -->
         <!-- afterDescendants：viewgroup只有当其子类控件不需要获取焦点时才获取焦点 -->
         <!-- blocksDescendants：viewgroup会覆盖子类控件而直接获得焦点 -->
 
         <com.zhy.autolayout.AutoLinearLayout
-            android:id="@+id/wifi_open_layout"
-            android:layout_width="684px"
-            android:layout_height="47px"
+            android:id="@+id/wifi_switch_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_height_item"
             android:clickable="true"
             android:descendantFocusability="blocksDescendants"
             android:gravity="start|center"
-            android:orientation="horizontal"
-            android:paddingLeft="14px"
-            android:paddingRight="14px" >
+            android:orientation="horizontal">
 
             <TextView
+                style="@style/TextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="WIFI连接"
-                android:textColor="#fff"
-                android:textSize="28px" />
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="WIFI连接" />
 
             <CheckBox
                 android:id="@+id/wifi_open_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="14px"
+                android:layout_marginLeft="9.83dip"
                 android:button="@drawable/checkbox_selector" />
         </com.zhy.autolayout.AutoLinearLayout>
 
-        <com.zhy.autolayout.AutoLinearLayout
+        <com.zhy.autolayout.AutoRelativeLayout
             android:id="@+id/wifi_refresh"
-            android:layout_width="684px"
-            android:layout_height="47px"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_height_item"
             android:clickable="true"
             android:gravity="start|center"
-            android:orientation="horizontal"
-            android:paddingLeft="14px"
-            android:paddingRight="14px" >
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="634px"
-                android:layout_height="47px"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:gravity="start|center"
-                android:text="刷新"
-                android:textColor="#fff"
-                android:textSize="28px" />
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="刷新" />
 
             <TextView
                 android:id="@+id/wifi_refresh_text_hint"
-                android:layout_width="44px"
-                android:layout_height="47px"
+                android:layout_width="42px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_and_margin_width"
                 android:gravity="start|center"
                 android:textColor="@color/color_frame_green"
-                android:textSize="28px"
+                android:textSize="28sp"
                 android:textStyle="bold" />
-        </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
     </com.zhy.autolayout.AutoLinearLayout>
 
-    <com.zhy.autolayout.AutoFrameLayout
+    <FrameLayout
         android:id="@+id/wifi_content_layout"
-        android:layout_width="684px"
-        android:layout_height="200px"
+        android:layout_width="@dimen/home_width_item"
+        android:layout_height="match_parent"
         android:layout_below="@+id/wifi_control_layout"
-        android:layout_centerHorizontal="true" >
+        android:layout_centerHorizontal="true">
 
         <TextView
             android:id="@+id/wifi_content_text_hint"
+            style="@style/TextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/wifi_text_open_hint"
-            android:textColor="#fff"
-            android:textSize="28px"
             android:visibility="visible" />
 
         <android.support.v7.widget.RecyclerView
@@ -94,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            />
-    </com.zhy.autolayout.AutoFrameLayout>
+            android:layout_marginTop="1dp" />
+    </FrameLayout>
 
 </com.zhy.autolayout.AutoRelativeLayout>

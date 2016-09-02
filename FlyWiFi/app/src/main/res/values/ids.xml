@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="id" name="wifi_adapter_item_root_tag_signal"></item>
-    <item type="id" name="wifi_adapter_item_root_tag_scan_result"></item>
-    <item type="id" name="wifi_adapter_item_root_tag_scan_current_connect"></item>
-    <item type="id" name="wifi_adapter_item_root_tag_is_ess"></item>
-    <item type="id" name="wifi_adapter_item_root_tag_is_success"></item>
+    <item name="wifi_adapter_item_root_tag_scan_result" type="id" />
+    <item name="wifi_adapter_item_root_tag_signal_text" type="id" />
+    <item name="wifi_adapter_item_root_tag_is_lock" type="id" />
+    <item name="wifi_adapter_item_root_tag_is_current_connect" type="id" />
+    <item name="wifi_adapter_item_root_tag_is_connected_success" type="id" />
+
+
 </resources>

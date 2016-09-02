@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kuang_cancle_save"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/home_left_and_right_padding"
+    android:paddingRight="@dimen/home_left_and_right_padding"
+    android:weightSum="320">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="196"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_and_margin_width"
+        android:paddingTop="@dimen/padding_and_margin_width"
+        android:weightSum="1">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="信号强度" />
+
+                <TextView
+                    android:id="@+id/connecting_signal"
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+                    android:text="强" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="连接速度" />
+
+                <TextView
+                    android:id="@+id/connecting_speed"
+                    style="@style/text_tip_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+                    android:text="11Mbps" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="安全性" />
+
+                <TextView
+                    android:id="@+id/connecting_safety"
+                    style="@style/text_tip_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+
+                    android:text="WPA/PWA2 PSK" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:text="IP地址" />
+
+                <TextView
+                    android:id="@+id/connecting_ip"
+                    style="@style/text_tip_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_and_margin_width"
+                    android:text="192.168.3.68" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="124"
+        android:gravity="start|center"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/connecting_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="取消" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/connecting_cancel_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_height_item"
+
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/padding_and_margin_width"
+                android:text="取消保存" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
